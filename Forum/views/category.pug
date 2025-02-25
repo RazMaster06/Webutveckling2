@@ -1,0 +1,17 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        title Tidder
+    body 
+        .header
+            h1 TIDDER
+        .text 
+            each thread in threadList
+                a(href="/thread/" + thread.id) 
+                    h2=thread.title
+                p=thread.username 
+                p=thread.thread_creation_date
+                
+        

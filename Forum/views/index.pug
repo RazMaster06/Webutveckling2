@@ -1,0 +1,19 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        title Tidder
+    body
+        .header 
+            h1 TIDDER
+        .text 
+            each category in categoryList
+                a(href="/category/" + category.id) 
+                    h2=category.title
+                .text2
+                    p=category.description
+                .gap 
+                    h3="g"
+         
+        
